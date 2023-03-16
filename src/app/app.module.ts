@@ -8,6 +8,10 @@ import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { CookieService } from 'ngx-cookie-service';
+
+//Rutas
+import { app_routing } from './app.routes';
 
 import { LoginComponent } from './login/login.component';
 import { HeroListComponent } from './hero-list/hero-list.component';
@@ -33,7 +37,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
-    )
+    ),
+    app_routing
   ],
   declarations: [
     AppComponent,
@@ -43,7 +48,7 @@ const appRoutes: Routes = [
     PageNotFoundComponent,
 
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
