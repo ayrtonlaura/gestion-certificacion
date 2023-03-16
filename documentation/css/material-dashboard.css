@@ -12801,8 +12801,11 @@ h2.title {
     margin-left: -15px; }
     .footer .footer-brand:hover, .footer .footer-brand:focus {
       color: #3C4858; }
+      .copyright.pull-left.footer-text{
+        color: #fff !important;
+      }
   .footer .copyright {
-    padding: 15px 0; }
+    padding: 15px 0;}
     .footer .copyright .material-icons {
       font-size: 18px;
       position: relative;

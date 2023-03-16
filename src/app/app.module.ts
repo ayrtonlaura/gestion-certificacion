@@ -16,6 +16,7 @@ import { app_routing } from './app.routes';
 import { LoginComponent } from './login/login.component';
 import { HeroListComponent } from './hero-list/hero-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -46,6 +47,7 @@ const appRoutes: Routes = [
     LoginComponent,
     HeroListComponent,
     PageNotFoundComponent,
+    HomeComponent,
 
   ],
   providers: [CookieService],
