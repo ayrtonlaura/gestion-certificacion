@@ -7,6 +7,7 @@ import { DashboardComponent } from '../../dashboard/dashboard.component';
 import { UserProfileComponent } from '../../user-profile/user-profile.component';
 import { TableListComponent } from '../../table-list/table-list.component';
 import { BalanzaComponent } from '../../balanza/balanza.component';
+import { TicketComponent } from '../../recepcion/ticket/ticket.component';
 import { TypographyComponent } from '../../typography/typography.component';
 import { IconsComponent } from '../../icons/icons.component';
 import { MapsComponent } from '../../maps/maps.component';
@@ -37,6 +38,7 @@ import {MatSelectModule} from '@angular/material/select';
     UserProfileComponent,
     TableListComponent,
     BalanzaComponent,
+    TicketComponent,
     TypographyComponent,
     IconsComponent,
     MapsComponent,

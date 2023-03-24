@@ -1,6 +1,13 @@
 <div class="main-content">
   <div class="container-fluid">
       <div class="row">
+
+            <div class="col-md-12">
+                <div class="card">
+                    <h2>Recepción de Productos</h2>
+                    <a routerLink="/ticket">Crear Ticket</a>
+                </div>
+            </div>
             <div class="col-md-12 d-flex justify-content-between">
                 <div class="card card-productos d-flex justify-content-center">
                     <div class="contenedor-productos text-center">
@@ -38,157 +45,38 @@
                 <div class="card card-plain">
                     <form class="form-inline">
                         <div class="form-group mb-2">
-                          <label for="staticEmail2" class="sr-only">Email</label>
-                          <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+                          <label for="staticEmail2" class="sr-only">Número de ticket</label>
+                          <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="">
                         </div>
                         <div class="form-group mx-sm-3 mb-2">
-                          <label for="inputPassword2" class="sr-only">Password</label>
-                          <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                          <label for="inputPassword2" class="sr-only">Número de ticket</label>
+                          <input type="password" class="form-control" id="inputPassword2" placeholder="">
                         </div>
-                        <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+                        <button type="submit" class="btn btn-primary mb-2">Aplicar</button>
                       </form>
                 </div>
+                
             </div>
+            <!-- <div class="col-md-12">
+                <form class="form-inline">  
+                    <div class="form-group">  
+                      <div class="input-group">  
+                        <input class="form-control" placeholder="yyyy-mm-dd"  
+                               name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">  
+                        <div class="input-group-append">  
+                          <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"></button>  
+                        </div>  
+                      </div>  
+                    </div>  
+                  </form>  
+            </div> -->
 
-          <div class="col-md-12">
-              <div class="card">
-                  <div class="card-header card-header-danger balanza-color">
-                      <h4 class="card-title ">Tabla balanza</h4>
-                      <p class="card-category"> Here is a subtitle for this table</p>
-                  </div>
-                  <div class="card-body">
-                      <div class="table-responsive">
-                          <table class="table">
-                              <thead class=" text-primary">
-                                  <th>
-                                      ID
-                                  </th>
-                                  <th>
-                                      Name
-                                  </th>
-                                  <th>
-                                      Country
-                                  </th>
-                                  <th>
-                                      City
-                                  </th>
-                                  <th>
-                                      Salary
-                                  </th>
-                              </thead>
-                              <tbody>
-                                  <tr>
-                                      <td>
-                                          1
-                                      </td>
-                                      <td>
-                                          Dakota Rice
-                                      </td>
-                                      <td>
-                                          Niger
-                                      </td>
-                                      <td>
-                                          Oud-Turnhout
-                                      </td>
-                                      <td class="text-primary">
-                                          $36,738
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          2
-                                      </td>
-                                      <td>
-                                          Minerva Hooper
-                                      </td>
-                                      <td>
-                                          Curaçao
-                                      </td>
-                                      <td>
-                                          Sinaai-Waas
-                                      </td>
-                                      <td class="text-primary">
-                                          $23,789
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          3
-                                      </td>
-                                      <td>
-                                          Sage Rodriguez
-                                      </td>
-                                      <td>
-                                          Netherlands
-                                      </td>
-                                      <td>
-                                          Baileux
-                                      </td>
-                                      <td class="text-primary">
-                                          $56,142
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          4
-                                      </td>
-                                      <td>
-                                          Philip Chaney
-                                      </td>
-                                      <td>
-                                          Korea, South
-                                      </td>
-                                      <td>
-                                          Overland Park
-                                      </td>
-                                      <td class="text-primary">
-                                          $38,735
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          5
-                                      </td>
-                                      <td>
-                                          Doris Greene
-                                      </td>
-                                      <td>
-                                          Malawi
-                                      </td>
-                                      <td>
-                                          Feldkirchen in Kärnten
-                                      </td>
-                                      <td class="text-primary">
-                                          $63,542
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          6
-                                      </td>
-                                      <td>
-                                          Mason Porter
-                                      </td>
-                                      <td>
-                                          Chile
-                                      </td>
-                                      <td>
-                                          Gloucester
-                                      </td>
-                                      <td class="text-primary">
-                                          $78,615
-                                      </td>
-                                  </tr>
-                              </tbody>
-                          </table>
-                      </div>
-                  </div>
-              </div>
-          </div>
+
+          
           <div class="col-md-12">
               <div class="card card-plain">
                   <div class="card-header card-header-danger balanza-color">
-                      <h4 class="card-title mt-0"> Table on Plain Background</h4>
+                        <h4 class="card-title ">Tabla balanza</h4>
                       <p class="card-category"> Here is a subtitle for this table</p>
                   </div>
                   <div class="card-body">
@@ -196,19 +84,31 @@
                           <table class="table table-hover">
                               <thead class="">
                                   <th>
-                                      ID
+                                      Número de ticket
                                   </th>
                                   <th>
-                                      Name
+                                    Fecha
                                   </th>
                                   <th>
-                                      Country
+                                    Transportista
                                   </th>
                                   <th>
-                                      City
+                                    Peso bruto origen
                                   </th>
                                   <th>
-                                      Salary
+                                    Merma transporte
+                                  </th>
+                                  <th>
+                                    Peso bruto ingreso
+                                  </th>
+                                  <th>
+                                    % Merma
+                                  </th>
+                                  <th>
+                                    Estado
+                                  </th>
+                                  <th>
+                                    Acciones
                                   </th>
                               </thead>
                               <tbody>
@@ -228,92 +128,80 @@
                                       <td>
                                           $36,738
                                       </td>
+                                      <td>
+                                        $36,738
+                                    </td>
+                                    <td>
+                                        $36,738
+                                    </td>
+                                    <td>
+                                        $36,738
+                                    </td>
+                                    <td>
+                                        $36,738
+                                    </td>
                                   </tr>
+
                                   <tr>
-                                      <td>
-                                          2
-                                      </td>
-                                      <td>
-                                          Minerva Hooper
-                                      </td>
-                                      <td>
-                                          Curaçao
-                                      </td>
-                                      <td>
-                                          Sinaai-Waas
-                                      </td>
-                                      <td>
-                                          $23,789
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          3
-                                      </td>
-                                      <td>
-                                          Sage Rodriguez
-                                      </td>
-                                      <td>
-                                          Netherlands
-                                      </td>
-                                      <td>
-                                          Baileux
-                                      </td>
-                                      <td>
-                                          $56,142
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          4
-                                      </td>
-                                      <td>
-                                          Philip Chaney
-                                      </td>
-                                      <td>
-                                          Korea, South
-                                      </td>
-                                      <td>
-                                          Overland Park
-                                      </td>
-                                      <td>
-                                          $38,735
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          5
-                                      </td>
-                                      <td>
-                                          Doris Greene
-                                      </td>
-                                      <td>
-                                          Malawi
-                                      </td>
-                                      <td>
-                                          Feldkirchen in Kärnten
-                                      </td>
-                                      <td>
-                                          $63,542
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          6
-                                      </td>
-                                      <td>
-                                          Mason Porter
-                                      </td>
-                                      <td>
-                                          Chile
-                                      </td>
-                                      <td>
-                                          Gloucester
-                                      </td>
-                                      <td>
-                                          $78,615
-                                      </td>
-                                  </tr>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        Dakota Rice
+                                    </td>
+                                    <td>
+                                        Niger
+                                    </td>
+                                    <td>
+                                        Oud-Turnhout
+                                    </td>
+                                    <td>
+                                        $36,738
+                                    </td>
+                                    <td>
+                                      $36,738
+                                  </td>
+                                  <td>
+                                      $36,738
+                                  </td>
+                                  <td>
+                                      $36,738
+                                  </td>
+                                  <td>
+                                      $36,738
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        Dakota Rice
+                                    </td>
+                                    <td>
+                                        Niger
+                                    </td>
+                                    <td>
+                                        Oud-Turnhout
+                                    </td>
+                                    <td>
+                                        $36,738
+                                    </td>
+                                    <td>
+                                      $36,738
+                                  </td>
+                                  <td>
+                                      $36,738
+                                  </td>
+                                  <td>
+                                      $36,738
+                                  </td>
+                                  <td>
+                                      $36,738
+                                  </td>
+                                </tr>
+                                  
                               </tbody>
                           </table>
                       </div>

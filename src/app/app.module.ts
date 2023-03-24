@@ -10,6 +10,8 @@ import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { CookieService } from 'ngx-cookie-service';
 
+//Datepicker
+
 //Rutas
 import { app_routing } from './app.routes';
 
@@ -17,16 +19,21 @@ import { LoginComponent } from './login/login.component';
 import { HeroListComponent } from './hero-list/hero-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
+import { TicketComponent } from './recepcion/ticket/ticket.component';
+// import { TicketComponent } from './recepcion/ticket/ticket.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'heroes', component: HeroListComponent },
+  { path: 'ticket', component: TicketComponent },
   { path: '',   redirectTo: '/heroes', pathMatch: 'full' },
+  { path: '',   redirectTo: '/ticket', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
-
+ 
 @NgModule({
   imports: [
+    
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
@@ -48,6 +55,7 @@ const appRoutes: Routes = [
     HeroListComponent,
     PageNotFoundComponent,
     HomeComponent,
+    // TicketComponent,
 
   ],
   providers: [CookieService],

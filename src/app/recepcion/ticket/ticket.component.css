@@ -1,0 +1,29 @@
+.card-header.card-header-danger.balanza-color{
+    background: linear-gradient(60deg, #0C8117, #0c8106a8);
+}
+
+.card.card-productos{
+    width: 269px;
+    height: 120px;
+    border-bottom: 5px solid #50D014;
+    border-radius: 5px;
+}
+
+.contenedor-productos.text-center h2{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.nuevo-style{
+    color: #222222;
+    font-size: 14px;
+}
+.datos-p{
+    font-size: 14px;
+    color: #222222;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-right: 5px;
+    cursor: pointer;
+}
