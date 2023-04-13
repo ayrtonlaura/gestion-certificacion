@@ -15,64 +15,61 @@
       <div class="row">
             <div class="col-md-12">
                 <form>
-                    <div class="form-group row">
-                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-                        <div class="col-sm-10">
-                          <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
-                        </div>
+                  
+                  
+                  <div class="row g-3 align-items-center mb-4">
+                      <div class="col-auto">
+                        <label for="inputPassword6" class="col-form-label">Numero de Ticket</label>
                       </div>
-                      <div class="form-group row">
-                        <label for="inputPassword" class="col-sm-2 col-form-label">Numero de Ticket</label>
-                        <div class="col-sm-2">
-                          <input type="text" class="form-control" id="inputPassword" placeholder="TB" disabled>
-                        </div>
-                        <div class="col-sm-2">
-                            <input type="password" class="form-control" id="inputPassword" placeholder="001-0000001" disabled>
-                        </div>
+                      <div class="col-auto">
+                        <input type="text" id="inputPassword6" class="form-control" value="TB" disabled aria-describedby="passwordHelpInline">
+                      </div>
 
-                        <label for="inputPassword" class="col-sm-2 col-form-label">Fecha de creación</label>
-                        <div class="col-sm-2">
-                          <input type="datetime-local" class="form-control" id="inputPassword" placeholder="TB">
-                        </div>
-                        
+                      <div class="col-auto">
+                        <input type="text" id="inputPassword6" class="form-control" value="001-0000001" disabled aria-describedby="passwordHelpInline">
                       </div>
+      
+                      <div class="col-auto">
+                          <label for="inputPassword6" class="col-form-label">Fecha de creación</label>
+                      </div>
+                      <div class="col-auto">
+                          <input type="datetime-local" class="form-control" id="inputDatetime" >
+                      </div>                    
+                      
+                  </div>                    
 
                       <div class="form-group row">
                         <div class="col-sm-4">
                             <div>
-                                <p class="d-inline-block datos-p">Datos del Transportista</p>
+                                <p class="d-inline-block datos-p" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Datos del Transportista</p>
                                 <span class="nuevo-style">Nuevo</span>
                             </div>
                             
                             <label for="inputPassword" class="col-sm-2 col-form-label">Código</label>
                             <div class="col-sm-3 d-inline-block">
-                              <input type="text" class="form-control" id="inputPassword" placeholder="000012" >
+                              <input type="number" class="form-control" id="inputPassword" placeholder="000012" >
                             </div>
 
                             <label for="inputPassword" class="col-sm-2 col-form-label">RUC</label>
                             <div class="col-sm-4 d-inline-block">
-                              <input type="text" class="form-control" id="inputPassword" placeholder="20202966587" >
+                              <input type="number" class="form-control" id="inputPassword" placeholder="20202966587" >
                             </div>
 
                         </div>
-                        <!-- <label for="inputPassword" class="col-sm-1 col-form-label">Ruc</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control" id="inputPassword" placeholder="001-0000001" disabled>
-                        </div> -->
                         <div class="col-sm-4">
 
                             <div>
-                                <p class="d-inline-block datos-p">Datos del conductor</p>
+                                <p class="d-inline-block datos-p" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Datos del conductor</p>
                                 <span class="nuevo-style">Nuevo</span>
                             </div>
                             <label for="inputPassword" class="col-sm-2 col-form-label">Código</label>
                             <div class="col-sm-3 d-inline-block">
-                              <input type="text" class="form-control" id="inputPassword" placeholder="45868258" >
+                              <input type="number" class="form-control" id="inputPassword" placeholder="45868258" >
                             </div>
 
                             <label for="inputPassword" class="col-sm-1 col-form-label">DIP</label>
                             <div class="col-sm-2 d-inline-block">
-                              <input type="text" class="form-control" id="inputPassword" placeholder="01" >
+                              <input type="number" class="form-control" id="inputPassword" placeholder="01" >
                               
                             </div>
 
@@ -80,7 +77,7 @@
                         <div class="col-sm-4">
 
                             <div>
-                                <p class="d-inline-block datos-p">Datos del Vehículo</p>
+                                <p class="d-inline-block datos-p" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Datos del Vehículo</p>
                                 <span class="nuevo-style">Nuevo</span>
                             </div>
                             <label for="inputPassword" class="col-sm-2 col-form-label">Placa</label>
@@ -97,58 +94,65 @@
                         
                       </div>
 
-
-
-                      <!-- nuevo -->
-                      <div class="form-group row">
-                        <div class="col-sm-4">
-                            
-                            
-                            <label for="inputPassword" class="col-sm-2 col-form-label">Transportista</label>
-                            <div class="col-sm-2 d-inline-block">
-                              <input type="text" class="form-control" id="inputPassword" placeholder="TRANSPORTES & NEGOCIACIONES SERLUZ S.R.L." >
-                            </div>
-
-                            <label for="inputPassword" class="col-sm-2 col-form-label">Conductor</label>
-                            <div class="col-sm-2 d-inline-block">
-                              <input type="text" class="form-control" id="inputPassword" placeholder="ROGER ALEXIS RIVAS SALAS" >
-                            </div>
-
+                      <div class="row g-3 align-items-center mb-4">
+                        <div class="col-auto">
+                          <label for="inputPassword6" class="col-form-label">Transportista</label>
+                        </div>
+                        <div class="col-auto">
+                          <input type="text" id="inputPassword6" class="form-control" value="TRANSPORTES & NEGOCIACIONES SERLUZ S.R.L." aria-describedby="passwordHelpInline">
                         </div>
                         
-                        <div class="col-sm-4">
-                            <label for="inputPassword" class="col-sm-2 col-form-label">Licencia</label>
-                            <div class="col-sm-2 d-inline-block">
-                              <input type="text" class="form-control" id="inputPassword" placeholder="X08997130" >
-                            </div>                      
-
+                        
+        
+                        <div class="col-auto">
+                            <label for="inputPassword6" class="col-form-label">Conductor</label>
                         </div>
+                        <div class="col-auto">
+                          <input type="text" id="inputPassword6" class="form-control" value="ROGER ALEXIS RIVAS SALAS"  aria-describedby="passwordHelpInline">
+                        </div>
+
+                        <div class="col-auto">
+                          <label for="inputPassword6" class="col-form-label">Licencia</label>
+                        </div>
+                        <div class="col-auto">
+                          <input type="text" id="inputPassword6" class="form-control" value="X08997130"  aria-describedby="passwordHelpInline">
+                        </div>
+        
+        
                         
                         
                       </div>
 
                       
 
-                  </form>
-            </div>
-
-            
-            <!-- <div class="col-md-12">
-                <form class="form-inline">  
-                    <div class="form-group">  
-                      <div class="input-group">  
-                        <input class="form-control" placeholder="yyyy-mm-dd"  
-                               name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">  
-                        <div class="input-group-append">  
-                          <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"></button>  
-                        </div>  
-                      </div>  
-                    </div>  
-                  </form>  
-            </div> -->
+                </form>
 
 
-          
+            <!-- Button trigger modal -->
+            <!-- Button trigger modal  Boton Modal Guia-->
+            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Modal
+            </button> -->
+
+            <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Soy el Modal
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-success">Aceptar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>   
           
       </div>
   </div>

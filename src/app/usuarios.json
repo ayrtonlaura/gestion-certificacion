@@ -1,0 +1,111 @@
+[{
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "fecha": "15/03/2023 09:24",
+    "transportistas": "TRANSPORTES & NEGOCIACIONES SERLUZ S.R.L.",
+    "pesoBrutoO": "30,142.08",
+    "merma": 42.00,
+    "pesoBrutoI": "31,444.08"
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "fecha": "11/03/2023 09:24",
+    "transportistas": "TRANSPORTE LUCERITO VRAE S.A.C.",
+    "pesoBrutoO": "31,021.04",
+    "merma": 74.23,
+    "pesoBrutoI": "32,555.08"
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "fecha": "21/03/2023 09:24",
+    "transportistas": "TRANSPORTES & NEGOCIACIONES SERLUZ S.R.L.",
+    "pesoBrutoO": "31,269.01",
+    "merma": 11.00,
+    "pesoBrutoI": "32,122.08"
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "fecha": "22/03/2023 09:24",
+    "transportistas": "TRANSPORTE LUCERITO VRAE S.A.C.",
+    "pesoBrutoO": "30,142.08",
+    "merma": 36.00,
+    "pesoBrutoI": "31,111.08"
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "fecha": "12/03/2023 09:24",
+    "transportistas": "TRANSPORTES & NEGOCIACIONES SERLUZ S.R.L.",
+    "pesoBrutoO": "32,235.00",
+    "merma": 31.00,
+    "pesoBrutoI": "35,220.08"
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "fecha": "02/03/2023 09:24",
+    "transportistas": "JANS CARGO PERU EXPRESS S.A.C.",
+    "pesoBrutoO": "30,142.08",
+    "merma": 56.00,
+    "pesoBrutoI": "34,140.08"
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "fecha": "06/03/2023 09:24",
+    "transportistas": "HEAVY PERU S.A.C.",
+    "pesoBrutoO": "32,147.19",
+    "merma": 24.00,
+    "pesoBrutoI": "34,100.08"
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "fecha": "04/04/2023 09:24",
+    "transportistas": "TRANSPORTE LUCERITO VRAE S.A.C.",
+    "pesoBrutoO": "30,142.08",
+    "merma": 52.00,
+    "pesoBrutoI": "33,100.08"
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "fecha": "05/03/2023 09:24",
+    "transportistas": "TRANSPORTES Y LOGISTICA CAMAC E.I.R.L.",
+    "pesoBrutoO": "30,142.08",
+    "merma": 43.00,
+    "pesoBrutoI": "32,100.08"
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "fecha": "25/02/2023 09:24",
+    "transportistas": "TRANSPORTES & NEGOCIACIONES SERLUZ S.R.L.",
+    "pesoBrutoO": "31,269.01",
+    "merma": 66.01,
+    "pesoBrutoI": "30,100.08"
+  }
+]
