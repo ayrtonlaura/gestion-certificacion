@@ -43,6 +43,9 @@
             ]
           },
           "configurations": {
+            "github-pages": {
+              "baseHref": "/https://ayrtonlaura.github.io/balanza/"
+            },
             "production": {
               "optimization": {
                 "scripts": true,
@@ -141,6 +144,9 @@
             ],
             "exclude": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     },
