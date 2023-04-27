@@ -20,6 +20,7 @@ export class LoginComponent {
     this.userService.login(user).subscribe( data => {
       this.userService.setToken(data.token);
       this.router.navigateByUrl('/');
+      console.log(data);
     });
   }
 }
