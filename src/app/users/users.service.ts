@@ -12,7 +12,7 @@ export class UsersService {
   constructor(private http: HttpClient, private cookies: CookieService) {}
 
   login(user: any): Observable<any> {
-    return this.http.post("https://reqres.in/api/login", user);
+    return this.http.post("https://atp-sgc-api.herokuapp.com/api/auth/login", user);
   }
 
   setToken(token: String) {
