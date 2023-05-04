@@ -17,10 +17,13 @@ export class LoginComponent {
     console.log(this.email);
     console.log(this.password);
     const user = {email: this.email, password: this.password};
+    console.log(user);
     this.userService.login(user).subscribe( data => {
       this.userService.setToken(data.token);
       this.router.navigateByUrl('/');
       console.log(data);
     });
+
   }
+ 
 }

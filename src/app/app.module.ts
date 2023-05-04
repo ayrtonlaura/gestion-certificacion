@@ -22,6 +22,8 @@ import { HomeComponent } from './home/home.component';
 import { TicketComponent } from './recepcion/ticket/ticket.component';
 // import { TicketComponent } from './recepcion/ticket/ticket.component';
 
+import {MaterialModule} from './shared/components/material.module';
+
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'heroes', component: HeroListComponent },
@@ -33,7 +35,7 @@ const appRoutes: Routes = [
  
 @NgModule({
   imports: [
-    
+    MaterialModule ,
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,

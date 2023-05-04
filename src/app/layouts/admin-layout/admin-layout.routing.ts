@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 import { DashboardComponent } from '../../dashboard/dashboard.component';
 import { UserProfileComponent } from '../../user-profile/user-profile.component';
 import { TableListComponent } from '../../table-list/table-list.component';
-import { BalanzaComponent } from '../../balanza/balanza.component';
+import { ProductoresComponent } from '../../productores/productores.component';
 import { TicketComponent } from '../../recepcion/ticket/ticket.component';
 import { DetallesComponent } from '../../recepcion/detalles/detalles.component';
 import { TypographyComponent } from '../../typography/typography.component';
@@ -58,9 +58,9 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
     { path: 'user-profile',   component: UserProfileComponent },
     { path: 'table-list',     component: TableListComponent },
-    { path: 'productores',        component: BalanzaComponent },
-    { path: 'balanza/ticket',         component: TicketComponent },
-    { path: 'balanza/detalles',       component: DetallesComponent }, 
+    { path: 'productores',        component: ProductoresComponent },
+    { path: 'productores/ticket',         component: TicketComponent },
+    { path: 'productores/detalles',       component: DetallesComponent }, 
     { path: 'typography',     component: TypographyComponent },
     { path: 'icons',          component: IconsComponent },
     { path: 'maps',           component: MapsComponent },

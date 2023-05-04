@@ -44,7 +44,7 @@
           },
           "configurations": {
             "github-pages": {
-              "baseHref": "/https://ayrtonlaura.github.io/balanza/"
+              "baseHref": "/https://ayrtonlaura.github.io/gestion-certificacion/"
             },
             "production": {
               "optimization": {
