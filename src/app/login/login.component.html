@@ -1,20 +1,30 @@
 <div class="login">
     <form class="custom-form" method="post">
-      <h1>Login</h1>
-      <input
-        type="email"
-        [(ngModel)]="email"
-        name="email"
-        placeholder="Email"
-        required="required"
-      />
-      <input
-        type="password"
-        [(ngModel)]="password"
-        name="password"
-        placeholder="Password"
-        required="required"
-      />
-      <button type="submit" (click)="login()">Log in</button>
+      <div class="logo-img">
+        <img src="./assets/img/logo_atp.png" class="img"/>
+      </div>
+      <h1>Sistema de gestión de certificaciones</h1>
+      <div class="box-log">
+        <label for="">Usuario</label>
+        <input
+          type="email"
+          [(ngModel)]="email"
+          name="email"
+          placeholder="Usuario"
+          required="required"
+        />
+      </div>
+
+      <div class="box-log">
+        <label for="">Password</label>
+        <input
+          type="password"
+          [(ngModel)]="password"
+          name="password"
+          placeholder="Password"
+          required="required"
+        />
+      </div>
+      <button type="submit" (click)="login()">Iniciar sesión</button>
     </form>
   </div>

@@ -4,40 +4,40 @@
 
             <div class="col-md-12 text-center">
                 <div class="d-inline-block">
-                    <h2>Recepción de Productos</h2>
+                    <h2>Listado de Productores</h2>
                     
-                    <button type="button" routerLink="/balanza/ticket" class="btn btn-success">Crear ticket</button>
+                    <button type="button" routerLink="/balanza/ticket" class="btn btn-success btn-productor">Registrar Productor</button>
                 </div>
             </div>
             <div class="col-md-12 d-flex justify-content-between card-balanza-info">
                 <div class="card card-productos d-flex justify-content-center">
                     <div class="contenedor-productos text-center">
-                        <h2>125</h2>
-                        <p>Ticket de pesada</p>
+                        <h2>1000</h2>
+                        <p>Productores</p>
                     </div>
                 </div>
                 <div class="card card-productos d-flex justify-content-center">
                     <div class="contenedor-productos text-center">
-                        <h2>152,036.00 Kg</h2>
-                        <p>Peso bruto origen</p>
+                        <h2>950</h2>
+                        <p>Activos</p>
                     </div>
                 </div>
                 <div class="card card-productos d-flex justify-content-center">
                     <div class="contenedor-productos text-center">
-                        <h2>150,124.15 Kg</h2>
-                        <p>Peso bruto ingreso</p>
+                        <h2>50</h2>
+                        <p>Desafiliados</p>
                     </div>
                 </div>
                 <div class="card card-productos d-flex justify-content-center">
                     <div class="contenedor-productos text-center">
-                        <h2>32,158.26</h2>
-                        <p>Merma transporte</p>
+                        <h2>800</h2>
+                        <p>Hombres</p>
                     </div>
                 </div>
                 <div class="card card-productos d-flex justify-content-center">
                     <div class="contenedor-productos text-center">
-                        <h2>0.23%</h2>
-                        <p>Porcentaje merma transporte</p>
+                        <h2>200</h2>
+                        <p>Mujeres</p>
                     </div>
                 </div>
             </div>
@@ -45,18 +45,18 @@
 
             <div class="row g-3 align-items-center mb-4">
                 <div class="col-auto">
-                  <label for="inputPassword6" class="col-form-label">Numero de Ticket</label>
+                  <label for="inputPassword6" class="col-form-label">Número DNI</label>
                 </div>
                 <div class="col-auto">
-                  <input type="text" id="inputPassword6" class="form-control" value="001-0000001" disabled aria-describedby="passwordHelpInline">
+                  <input type="text" id="inputPassword6" class="form-control" value="45868258" disabled aria-describedby="passwordHelpInline">
                 </div>
                 <div class="col-auto">
-                    <label for="inputPassword6" class="col-form-label">Transportista</label>
+                    <label for="inputPassword6" class="col-form-label">Productor</label>
                 </div>
                 <div class="col-auto">
                     <div class="form">
                         <select class="form-select" aria-label=".form-select-sm example">
-                            <option selected>TRANSPORTES & NEGOCIACIONES SERLUZ S.R.L.</option>
+                            <option selected>ROJAS GUERRERO ROSA MARNELY</option>
                             <option value="1">TRANSPORTES & NEGOCIACIONES SERLUZ S.R.L.</option>
                             <option value="2">TRANSPORTES Y LOGISTICA CAMAC E.I.R.L.</option>
                             <option value="3">TRANSPORTE LUCERITO VRAE S.A.C.</option>
@@ -66,7 +66,7 @@
                 </div>
 
                 <div class="col-auto">
-                    <label for="inputPassword6" class="col-form-label">Fecha de creación</label>
+                    <label for="inputPassword6" class="col-form-label">Rango de afiliación</label>
                 </div>
                 <div class="col-auto">
                     <input type="datetime-local" class="form-control" id="inputDatetime" >
@@ -104,29 +104,45 @@
                           <table class="table table-hover">
                               <thead class="">
                                   <th>
-                                      Número de ticket
+                                    Código Productor
                                   </th>
                                   <th>
-                                    Fecha
+                                    Fecha afiliación
                                   </th>
                                   <th>
-                                    Transportista
+                                    Apellido Paterno
                                   </th>
                                   <th>
-                                    Peso bruto origen
+                                    Apellido Materno
                                   </th>
                                   <th>
-                                    Merma transporte
+                                    Nombres
                                   </th>
                                   <th>
-                                    Peso bruto ingreso
+                                    DNI
                                   </th>
                                   <th>
-                                    % Merma
+                                    Teléfono
                                   </th>
                                   <th>
-                                    Estado
+                                    Ubigeo
                                   </th>
+                                  <!-- contando -->
+                                  <th>
+                                    Género
+                                  </th>
+                                  <th>
+                                    Fec.Nacimiento
+                                  </th>   
+                                  <th>
+                                    Estado civil  
+                                  </th>
+                                  <th>
+                                    Grado instr.
+                                  </th>
+                                  <th>
+                                    Situación
+                                  </th>                     
                                   <th class="text-center">
                                     Acciones
                                   </th>
@@ -137,90 +153,45 @@
                                             001-0000010
                                       </td>
                                       <td>
-                                          01/03/2023 09:24
+                                        01/03/2023 09:24
                                       </td>
                                       <td>
-                                        TRANSPORTES & NEGOCIACIONES SERLUZ S.R.L.
+                                        ABARCA
                                       </td>
                                       <td>
-                                        30,142.08
+                                        ROJAS
                                       </td>
                                       <td>
-                                          $36,738
+                                        JOSE ALBERTO
                                       </td>
                                       <td>
-                                        $36,738
+                                        45842685
                                     </td>
                                     <td>
-                                        $36,738
+                                        999458475
                                     </td>
                                     <td>
-                                        $36,738
+                                        010512
+                                    </td>
+                                    <td>
+                                        Femenino
+                                    </td>
+                                    <td>
+                                        12/12/1976
+                                    </td>
+                                    <td>
+                                        Soltero
+                                    </td>
+                                    <td>
+                                        Secundaria
+                                    </td>
+                                    <td>
+                                        Activo
                                     </td>
                                     <td class="acciones-puntos">
                                         ...
                                     </td>
                                   </tr>
-
-                                  <tr>
-                                    <td>
-                                        001-0000020
-                                    </td>
-                                    <td>
-                                        01/03/2023 09:24
-                                    </td>
-                                    <td>
-                                        TRANSPORTES Y LOGISTICA CAMAC E.I.R.L.
-                                    </td>
-                                    <td>
-                                        31,021.04
-                                    </td>
-                                    <td>
-                                        $36,738
-                                    </td>
-                                    <td>
-                                      $36,738
-                                  </td>
-                                  <td>
-                                      $36,738
-                                  </td>
-                                  <td>
-                                      $36,738
-                                  </td>
-                                  <td class="acciones-puntos">
-                                    ...
-                                  </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        001-0000030
-                                    </td>
-                                    <td>
-                                        01/03/2023 09:24
-                                    </td>
-                                    <td>
-                                        TRANSPORTE LUCERITO VRAE S.A.C.
-                                    </td>
-                                    <td>
-                                        32,235.00
-                                    </td>
-                                    <td>
-                                        $36,738
-                                    </td>
-                                    <td>
-                                      $36,738
-                                  </td>
-                                  <td>
-                                      $36,738
-                                  </td>
-                                  <td>
-                                      $36,738
-                                  </td>
-                                  <td class="acciones-puntos">
-                                        ...
-                                  </td>
-                                </tr>
                                   
                               </tbody>
                           </table>

@@ -3,7 +3,7 @@
 }
 
 .card.card-productos{
-    width: 269px;
+    width: 250px;
     height: 120px;
     border-bottom: 5px solid #50D014;
     border-radius: 5px;
@@ -28,4 +28,11 @@
         flex-direction: column !important;
         align-items: center !important;
     }
+}
+
+.col-form-label{
+    color: #464646 !important;
+}
+.btn-productor{
+    background-color: #50D014 !important;
 }
