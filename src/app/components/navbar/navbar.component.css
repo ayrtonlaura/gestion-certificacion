@@ -1,3 +1,15 @@
 .balanza-color-nav{
     background-color: #0C8117 !important;
 }
+
+button{
+    border: none;
+    background-color: #50D014 !important;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+button p{
+    margin: 0;
+    color: #ffffff;
+}

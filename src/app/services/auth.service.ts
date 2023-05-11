@@ -50,10 +50,12 @@ export class AuthService {
     )
   }
 
+
   private guardarToken( idToken: string){
     this.userToken = idToken;
     localStorage.setItem('token',idToken);
-    console.log(idToken);
+    
+    //console.log(idToken);
     
   }
 
@@ -70,6 +72,11 @@ export class AuthService {
 
     return this.userToken.length > 2;
   }
+
+
+
+  
+
 }
 
 

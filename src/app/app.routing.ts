@@ -7,22 +7,27 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './guards/auth.guard';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProductoresComponent } from './productores/productores.component';
 
 const routes: Routes =[
   {
     path: '',
-    
+    redirectTo: 'productores',
+    component: ProductoresComponent,
     pathMatch: 'full',
+    
   },
   
   {
     path: '',
-    component: AdminLayoutComponent,
+    component: AdminLayoutComponent
+    ,canActivate: [AuthGuard],
     children: [{
       path: '',
       loadChildren: () => import('./layouts/admin-layout/admin-layout.module').then(m => m.AdminLayoutModule)
-    }]
+    }],
   }
+  
 ];
 
 @NgModule({

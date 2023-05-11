@@ -1,8 +1,11 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef, inject } from '@angular/core';
 import { ROUTES } from '../sidebar/sidebar.component';
 import {Location, LocationStrategy, PathLocationStrategy} from '@angular/common';
 import { Router } from '@angular/router';
 import { AuthService } from 'app/services/auth.service';
+
+import {NgForm} from '@angular/forms'
+import { UsuarioModel } from 'app/models/usuario.model';
 
 @Component({
   selector: 'app-navbar',
@@ -10,6 +13,18 @@ import { AuthService } from 'app/services/auth.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+    
+    private authService = inject(AuthService);
+    email: string;
+    password: string;
+    usuario: UsuarioModel = new UsuarioModel();
+
+    // get user() {        
+    //     return this.authService.login(this.usuario);
+    // }
+
+    // public user = computed( () => this.authService.login) 
+
     private listTitles: any[];
     location: Location;
       mobile_menu_visible: any = 0;
@@ -126,6 +141,17 @@ export class NavbarComponent implements OnInit {
 
     salir(){
         this,this.auth.logout();
+
         this.router.navigateByUrl('/login');
     }
+
+    // obtenerlog(){
+    //     // if( form.invalid){ return;}
+    //     console.log('hola');
+    //     this.auth.login( this.usuario).subscribe( resp =>{
+    //         console.log(resp);
+    //       })
+        
+    // }
 }
+

@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 import { DashboardComponent } from '../../dashboard/dashboard.component';
 import { UserProfileComponent } from '../../user-profile/user-profile.component';
 import { TableListComponent } from '../../table-list/table-list.component';
-import { BalanzaComponent } from '../../balanza/balanza.component';
+import { ProductoresComponent } from '../../productores/productores.component';
 import { TicketComponent } from '../../recepcion/ticket/ticket.component';
 import { DetallesComponent } from '../../recepcion/detalles/detalles.component';
 import { TypographyComponent } from '../../typography/typography.component';
@@ -56,15 +56,15 @@ export const AdminLayoutRoutes: Routes = [
     //         component: UpgradeComponent
     //     }]
     // }
-    { path: 'dashboard',      component: DashboardComponent },
-    { path: 'user-profile',   component: UserProfileComponent },
-    { path: 'table-list',     component: TableListComponent },
-    { path: 'productores',        component: BalanzaComponent ,canActivate: [AuthGuard]},
-    { path: 'balanza/ticket',         component: TicketComponent ,canActivate: [AuthGuard]},
-    { path: 'balanza/detalles',       component: DetallesComponent ,canActivate: [AuthGuard]}, 
-    { path: 'typography',     component: TypographyComponent },
-    { path: 'icons',          component: IconsComponent },
-    { path: 'maps',           component: MapsComponent },
-    { path: 'notifications',  component: NotificationsComponent },
-    { path: 'upgrade',        component: UpgradeComponent },
+    { path: 'dashboard',      component: DashboardComponent,canActivate: [AuthGuard]  },
+    { path: 'user-profile',   component: UserProfileComponent,canActivate: [AuthGuard] },
+    { path: 'table-list',     component: TableListComponent,canActivate: [AuthGuard] },
+    { path: 'productores',        component: ProductoresComponent ,canActivate: [AuthGuard]},
+    { path: 'productores/ticket',         component: TicketComponent ,canActivate: [AuthGuard]},
+    { path: 'productores/detalles',       component: DetallesComponent ,canActivate: [AuthGuard]}, 
+    { path: 'typography',     component: TypographyComponent,canActivate: [AuthGuard] },
+    { path: 'icons',          component: IconsComponent,canActivate: [AuthGuard] },
+    { path: 'maps',           component: MapsComponent,canActivate: [AuthGuard] },
+    { path: 'notifications',  component: NotificationsComponent,canActivate: [AuthGuard] },
+    { path: 'upgrade',        component: UpgradeComponent,canActivate: [AuthGuard] },
 ];

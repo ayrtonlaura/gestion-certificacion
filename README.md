@@ -11,3 +11,10 @@ y contraseña cualquiera
 npm i angular-cli-ghpages
 ng add angular-cli-ghpages
 ng deploy --base-href=https://ayrtonlaura.github.io/gestion-certificacion/
+
+
+#### json
+{
+    "email": "sistemas@amazonastrading.com",
+    "password": "Am4z0n4s*"
+}

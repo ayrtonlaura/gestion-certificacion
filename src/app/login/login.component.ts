@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { UsersService } from "../users/users.service";
 import { Router } from '@angular/router';
-import { log } from 'console';
 
 import {NgForm} from '@angular/forms'
 import { UsuarioModel } from 'app/models/usuario.model';
