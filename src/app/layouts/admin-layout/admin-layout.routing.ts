@@ -11,6 +11,7 @@ import { IconsComponent } from '../../icons/icons.component';
 import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
+import { AuthGuard } from 'app/guards/auth.guard';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -58,9 +59,9 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
     { path: 'user-profile',   component: UserProfileComponent },
     { path: 'table-list',     component: TableListComponent },
-    { path: 'productores',        component: BalanzaComponent },
-    { path: 'balanza/ticket',         component: TicketComponent },
-    { path: 'balanza/detalles',       component: DetallesComponent }, 
+    { path: 'productores',        component: BalanzaComponent ,canActivate: [AuthGuard]},
+    { path: 'balanza/ticket',         component: TicketComponent ,canActivate: [AuthGuard]},
+    { path: 'balanza/detalles',       component: DetallesComponent ,canActivate: [AuthGuard]}, 
     { path: 'typography',     component: TypographyComponent },
     { path: 'icons',          component: IconsComponent },
     { path: 'maps',           component: MapsComponent },

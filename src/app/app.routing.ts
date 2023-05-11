@@ -4,13 +4,18 @@ import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './guards/auth.guard';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes =[
   {
     path: '',
-    redirectTo: 'productores',
+    
     pathMatch: 'full',
-  }, {
+  },
+  
+  {
     path: '',
     component: AdminLayoutComponent,
     children: [{

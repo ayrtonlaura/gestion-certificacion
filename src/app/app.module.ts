@@ -20,12 +20,18 @@ import { HeroListComponent } from './hero-list/hero-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
 import { TicketComponent } from './recepcion/ticket/ticket.component';
+
+import { AuthGuard } from './guards/auth.guard';
+import { BalanzaComponent } from './balanza/balanza.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 // import { TicketComponent } from './recepcion/ticket/ticket.component';
 
 const appRoutes: Routes = [
+  { path: 'productores', component: BalanzaComponent ,canActivate: [AuthGuard] },
+  { path: 'dashboard', component: DashboardComponent ,canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent },
-  { path: 'heroes', component: HeroListComponent },
-  { path: 'ticket', component: TicketComponent },
+  { path: 'heroes', component: HeroListComponent,canActivate: [AuthGuard] },
+  { path: 'ticket', component: TicketComponent ,canActivate: [AuthGuard]},
   { path: '',   redirectTo: '/heroes', pathMatch: 'full' },
   { path: '',   redirectTo: '/ticket', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
