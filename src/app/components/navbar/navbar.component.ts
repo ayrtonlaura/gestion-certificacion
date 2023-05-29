@@ -1,7 +1,8 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef, inject, computed } from '@angular/core';
 import { ROUTES } from '../sidebar/sidebar.component';
 import {Location, LocationStrategy, PathLocationStrategy} from '@angular/common';
 import { Router } from '@angular/router';
+import { AuthService } from 'app/auth/services/auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -43,7 +44,7 @@ export class NavbarComponent implements OnInit {
 
         body.classList.add('nav-open');
 
-        this.sidebarVisible = true;
+        this.sidebarVisible = true;        
     };
     sidebarClose() {
         const body = document.getElementsByTagName('body')[0];
@@ -122,4 +123,24 @@ export class NavbarComponent implements OnInit {
       }
       return 'Dashboard';
     }
+    
+
+
+    private authService = inject( AuthService );
+
+    public user = computed(() =>{
+        this.authService.currentUser();
+        console.log(this.authService.currentUser());
+        
+    } 
+     );
+    
+    // get user() {
+    //     console.log('Comienza usuario');
+        
+    //     console.log(this.authService.currentUser().email);
+    //   return this.authService.currentUser();
+      
+    // }
+    
 }

@@ -1,5 +1,8 @@
 <div class="login">
-    <form class="custom-form" method="post">
+    <form class="custom-form" 
+          autocomplete="off"
+          [formGroup]="myForm"
+          (ngSubmit)="login()" >
       <div class="logo-img">
         <img src="./assets/img/logo_atp.png" class="img"/>
       </div>
@@ -8,10 +11,8 @@
         <label for="">Usuario</label>
         <input
           type="email"
-          [(ngModel)]="email"
-          name="email"
           placeholder="Usuario"
-          required="required"
+          formControlName="email"
         />
       </div>
 
@@ -19,12 +20,10 @@
         <label for="">Password</label>
         <input
           type="password"
-          [(ngModel)]="password"
-          name="password"
+          formControlName="password"
           placeholder="Password"
-          required="required"
         />
       </div>
-      <button type="submit" (click)="login()">Iniciar sesión</button>
+      <button [disabled]="myForm.invalid" type="submit" >Iniciar sesión</button>
     </form>
   </div>
