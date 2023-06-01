@@ -14,7 +14,7 @@
   }
   .custom-form {
     min-width: 300px;
-    max-width: 60%;
+    max-width: 25%;
     margin: 0px auto;
     background: rgba(255, 255, 255, 0.15);
     padding: 2rem 3rem;
@@ -38,6 +38,7 @@
     background: #ebf5fc;
   }
   .custom-form button {
+    margin: 25px 0 0 0;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     border: none;
