@@ -1,9 +1,9 @@
 
 
-export interface User {
-  id:       string;
-  email:    string;
-  password: string;
-  token:    string;
-  ok:       string;
+export class User {
+  id?:       string;
+  email?:    string;
+  password?: string;
+  token?:    string;
+  ok?:       string;
 }

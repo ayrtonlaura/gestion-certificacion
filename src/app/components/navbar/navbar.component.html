@@ -10,7 +10,7 @@
             <span class="navbar-toggler-icon icon-bar"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navigation">
-            <form class="navbar-form">
+            <form class="navbar-form buscador-det">
                 <div class="input-group no-border">
                     <input type="text" value="" class="form-control" placeholder="Search...">
                     <button mat-raised-button type="submit" class="btn btn-white btn-round btn-just-icon">
@@ -21,8 +21,11 @@
             </form>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <p>{{ user() | json }}</p>
+                    <p class="name-usuario">{{ user() }}</p>
                 </li>
+                <button (click)="onLogout()" class="btn btn-success btn-productor">
+                    Logout
+                  </button>
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="javascript:void(0)" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="material-icons">notifications</i>

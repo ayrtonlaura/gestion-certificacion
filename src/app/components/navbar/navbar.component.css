@@ -1,3 +1,14 @@
 .balanza-color-nav{
     background-color: #0C8117 !important;
 }
+
+.name-usuario{
+    color: #fff;
+    font-weight: bold;
+    padding: 0 30px;
+    margin: 0;
+}
+
+.navbar-form.buscador-det{
+    padding-right: 40px;
+}

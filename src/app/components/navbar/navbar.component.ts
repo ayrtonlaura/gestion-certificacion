@@ -129,11 +129,15 @@ export class NavbarComponent implements OnInit {
     private authService = inject( AuthService );
 
     public user = computed(() =>{
-        this.authService.currentUser();
-        console.log(this.authService.currentUser());
+        // console.log(this.authService.currentUser().email);
+        return this.authService.currentUser()?.email;
         
-    } 
-     );
+        } 
+    );
+
+    onLogout() {
+        this.authService.logout();
+    }
     
     // get user() {
     //     console.log('Comienza usuario');

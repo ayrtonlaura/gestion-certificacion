@@ -4,7 +4,8 @@ import { User } from './user.interface';
 
 
 export interface LoginResponse {
-  user:  User;
+  // user:  User;
   token: string;
+  email: string;
 }
 
