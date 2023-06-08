@@ -24,7 +24,7 @@ export class AppComponent implements OnInit{
   public cargarData(){
     this.RestService.get('https://jsonplaceholder.typicode.com/users')
     .subscribe(respuesta =>{
-      console.log(respuesta);
+      // console.log(respuesta);
       
     })
   }

@@ -9,11 +9,11 @@ import { UsersService } from "../users/users.service";
 export class HomeComponent implements OnInit {
   constructor(public userService: UsersService) {}
   ngOnInit() {
-    this.getUserLogged();
+    // this.getUserLogged();
   }
-  getUserLogged() {
-    this.userService.getUser().subscribe(user => {
-      console.log(user);
-    });
-  }
+  // getUserLogged() {
+  //   this.userService.getUser().subscribe(user => {
+  //     console.log(user);
+  //   });
+  // }
 }

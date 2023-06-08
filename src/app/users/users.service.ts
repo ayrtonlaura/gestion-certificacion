@@ -11,22 +11,22 @@ export class UsersService {
 
   constructor(private http: HttpClient, private cookies: CookieService) {}
 
-  login(user: any): Observable<any> {
-    return this.http.post("https://atp-sgc-api.herokuapp.com/api/auth/login", user);
-  }
+  // login(user: any): Observable<any> {
+  //   return this.http.post("https://atp-sgc-api.herokuapp.com/api/auth/login", user);
+  // }
 
-  setToken(token: String) {
-    this.cookies.set("token", 'token'  );
-  }
-  getToken() {
-    return this.cookies.get("token");
-  }
+  // setToken(token: String) {
+  //   this.cookies.set("token", 'token'  );
+  // }
+  // getToken() {
+  //   return this.cookies.get("token");
+  // }
 
-  getUser() {
-    return this.http.get("https://reqres.in/api/users/2");
-  }
-  getUserLogged() {
-    const token = this.getToken();
-    // Aquí iría el endpoint para devolver el usuario para un token
-  }
+  // getUser() {
+  //   return this.http.get("https://reqres.in/api/users/2");
+  // }
+  // getUserLogged() {
+  //   const token = this.getToken();
+  //   // Aquí iría el endpoint para devolver el usuario para un token
+  // }
 }

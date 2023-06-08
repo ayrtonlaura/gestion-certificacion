@@ -11,3 +11,8 @@ y contraseña cualquiera
 npm i angular-cli-ghpages
 ng add angular-cli-ghpages
 ng deploy --base-href=https://ayrtonlaura.github.io/gestion-certificacion/
+
+
+#### Update Angular
+npm update -g @angular/cli 
+npm install --save-dev @angular/cli@latest
